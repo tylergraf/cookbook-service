@@ -13,6 +13,9 @@ export default class CookbookService {
   async recipes(id){
     return await fetch(`${this.baseUrl}/api/recipes/${id}`);
   }
+  async allRecipes(){
+    return await fetch(`${this.baseUrl}/api/recipes/all`);
+  }
   async recipe(id){
     return await fetch(`${this.baseUrl}/api/recipe/${id}`);
   }

@@ -21,6 +21,9 @@ window.CookbookService = {
   recipes: function(id){
     return lefetch(baseUrl+'/api/recipes/'+id);
   },
+  allRecipes: function(){
+    return lefetch(baseUrl+'/api/recipes/all');
+  },
   recipe: function(id){
     return lefetch(baseUrl+'/api/recipe/'+id);
   },
