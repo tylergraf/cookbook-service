@@ -1,7 +1,8 @@
 const fetch = function(url, config){
   let defaultConfig = {
     headers: {
-      'content-type': 'application/json'
+      'content-type': 'application/json',
+      count: false
     }
   };
 
