@@ -9,7 +9,8 @@ var lefetch = function(url, config){
 
   return window.fetch(url, defaultConfig).then(function(res){if (res.status !== 204 && res.status < 400) return res.json()});
 }
-var baseUrl = 'http://localhost:3000';
+// var baseUrl = 'http://localhost:3000';
+var baseUrl = 'https://gretchenscookbook-api.herokuapp.com';
 
 window.CookbookService = {
   categories: function(){
